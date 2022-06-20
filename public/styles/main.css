@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url('/fonts/opensans-latin-400.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url('/fonts/opensans-latin-700.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  --bs-gutter-x: 1.25em;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  max-width: 54em;
+  margin: 0 auto;
+}
+
+.sidebar {
+  font-size: 0.875em;
+}
+
+.sidebar ol {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 0.25em 0;
+}
+
+.sidebar a {
+  color: inherit;
+  padding-left: 0.5em;
+}
+
+footer {
+  padding-top: var(--bs-gutter-x);
+  padding-bottom: var(--bs-gutter-x);
+}
+
+footer > .container-fluid {
+  font-size: 0.85em;
+  max-width: 72rem;
+}
+
+@media (min-width: 72em) {
+  main {
+    margin-top: 3em;
+    max-width: 72em;
+    display: grid;
+    gap: 3em;
+    grid-template-columns: 3fr 1fr;
+  }
+  .sidebar {
+    margin-top: 3em;
+    padding-left: 1.5em;
+  }
+  footer {
+    padding: 2.5em;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 8 / 5;
+}
+
+textarea {
+  resize: vertical;
+  width: 100%;
+  aspect-ratio: 2/1;
+  margin: 0 0 1em;
+  padding: 1em;
+}
+
+.photo-grid {
+  --photo-grid-gap: 3px;
+  padding: var(--photo-grid-gap);
+  margin: 1em 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+
+  /* Based on the actual aspect ratio once rendered */
+  aspect-ratio: 353 / 335;
+}
+.photo-grid-thumbnails {
+  width: 100%;
+  display: grid;
+  margin-top: var(--photo-grid-gap);
+  gap: var(--photo-grid-gap);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.photo-grid.active {
+  opacity: 1;
+}
+
+@media (min-width: 45em) {
+  .photo-grid {
+    aspect-ratio: 798 / 565;
+  }
+  .photo-grid-thumbnails {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}

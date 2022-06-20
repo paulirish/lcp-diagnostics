@@ -1,0 +1,21 @@
+{
+  "name": "lcp-diagnostics",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Philip Walton",
+    "email": "philip@philipwalton.com",
+    "url": "http://philipwalton.com"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "express": "^4.17.3",
+    "compression": "^1.7.4"
+  }
+}

@@ -1,0 +1,10 @@
+[
+  {"slug": "london", "alt": "London"},
+  {"slug": "bangkok", "alt": "Bangkok"},
+  {"slug": "venice", "alt": "Venice"},
+  {"slug": "sydney", "alt": "Sydney"},
+  {"slug": "amsterdam", "alt": "Amsterdam"},
+  {"slug": "san-francisco", "alt": "San Francisco"},
+  {"slug": "tokyo", "alt": "Tokyo"},
+  {"slug": "paris", "alt": "Paris"}
+]

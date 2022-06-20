@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PhotoApp Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon"type="image/x-icon" href="data:image/x-icon;,">
+
+  <link rel="preload" href="/fonts/opensans-latin-400.woff2" as="font" crossorigin>
+  <link rel="preload" href="/fonts/opensans-latin-700.woff2" as="font" crossorigin>
+
+  <link rel="stylesheet" href="/styles/bootstrap.css">
+  <link rel="stylesheet" href="/styles/main.css">
+
+  <script defer src="/scripts/main.js"></script>
+
+  <script>
+    // Inline script, which is common on many pages
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid py-2">
+      <a class="navbar-brand" href="#">PhotoApp</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Albums</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Prints</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container-fluid">
+    <section class="py-4">
+      <header class="mb-4">
+        <h1>World Cities</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Albums</a></li>
+            <li class="breadcrumb-item active" aria-current="page">World Cities</li>
+          </ol>
+        </nav>
+      </header>
+
+      <div class="photo-grid border active" id="photo-grid">
+        <picture>
+          <source type="image/avif" srcset="/images/large/london.avif 1600w, /images/med/london.avif 800w">
+          <source type="image/webp" srcset="/images/large/london.webp 1600w, /images/med/london.webp 800w">
+          <img fetchpriority="high" src="/images/large/london.jpg" alt="">
+        </picture>
+        <div class="photo-grid-thumbnails"><img class="photo-grid-thumbnail" src="/images/thumbs/london.jpg" alt="">
+            <img class="photo-grid-thumbnail" src="/images/thumbs/bangkok.jpg" alt="">
+            <img class="photo-grid-thumbnail" src="/images/thumbs/venice.jpg" alt="">
+            <img class="photo-grid-thumbnail" src="/images/thumbs/sydney.jpg" alt="">
+            <img class="photo-grid-thumbnail" src="/images/thumbs/amsterdam.jpg" alt="">
+            <img class="photo-grid-thumbnail" src="/images/thumbs/san-francisco.jpg" alt="">
+            <img class="photo-grid-thumbnail" src="/images/thumbs/tokyo.jpg" alt="">
+            <img class="photo-grid-thumbnail" src="/images/thumbs/paris.jpg" alt="">
+            </div>
+      </div>
+
+      <p>Curabitur placerat massa eget mi tincidunt, vitae sagittis lacus blandit. Nullam efficitur mi eu dolor lobortis dictum. Nam tellus nibh, consequat ac urna nec, fermentum aliquam mauris. Phasellus et mi ac ligula hendrerit maximus vitae vitae eros.</p>
+      <p>Proin malesuada, ligula sit amet iaculis aliquet, justo ligula consectetur ante, at condimentum justo ex in ex, interdum non tellus quis, accumsan dictum neque. Nullam tincidunt ante eget nisi suscipit rutrum.</p>
+      <p>Nunc euismod nisi non turpis pellentesque condimentum. Suspendisse egestas magna at ex sollicitudin mattis.</p>
+      <p>Vivamus luctus blandit pretium. Phasellus sit amet tortor dui. Nam ante urna, accumsan ut porta ac, fringilla non nisl. Aliquam a consectetur est, sed aliquam orci. Nullam cursus ut nibh et euismod. Sed et massa sollicitudin, faucibus purus ac, scelerisque nisl.</p>
+      <p>Ut a semper quam. Praesent venenatis mattis odio ac mattis. Nunc venenatis vitae risus et rutrum. Quisque nibh dui, porta at erat id, lacinia bibendum quam. Vestibulum quis consectetur mauris. Vivamus fermentum nulla vel aliquam consequat. Nulla nec gravida dolor. Integer congue porta quam sit amet iaculis. Cras eleifend pulvinar nulla, quis blandit sapien efficitur eget.</p>
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse vehicula lorem blandit augue volutpat dapibus. Quisque quis velit vitae mauris tristique vehicula. Curabitur bibendum ipsum nisi, vitae pellentesque magna pharetra et.</p>
+      <p>Praesent eget risus efficitur dolor volutpat semper. Pellentesque vel lorem quam. Donec facilisis convallis sollicitudin. Integer sit amet orci congue odio aliquam iaculis. Etiam et blandit nisi. Sed eget accumsan sapien.</p>
+      <p>Proin dapibus enim enim, non porta massa facilisis non. Nullam dignissim varius nunc in pharetra. Aliquam consectetur massa vel tristique iaculis. Duis ac orci eget justo tempus mattis eu laoreet diam. Suspendisse ipsum nunc.</p>
+      <p>Vivamus vulputate, lorem sodales volutpat tempor, turpis sem fringilla lacus, nec molestie nunc ligula ac lacus. Maecenas non dolor non augue faucibus aliquet non at sem. Ut malesuada auctor nisl ut condimentum. Donec at orci dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Fusce vel mauris id lectus pretium mollis id vel odio. Fusce eu vestibulum justo. Integer quis sem nec metus sodales molestie vitae et nulla. Phasellus sit amet arcu fringilla, imperdiet mauris vitae, congue ex.</p>
+    </section>
+
+    <aside class="text-muted sidebar">
+      <h5 class="border-bottom pb-2 mb-3">Other Albums</h5>
+      <ol class="p-0">
+        <li>🏙️ <a href="#">World Cities</a></li>
+        <li>⛰️ <a href="#">Landscapes</a></li>
+        <li>🌊 <a href="#">Seascapes</a></li>
+        <li>🐋 <a href="#">Wildlife</a></li>
+        <li>✨ <a href="#">Night Sky</a></li>
+        <li>💠 <a href="#">Abstract</a></li>
+      </ol>
+    </aside>
+  </main>
+
+  <footer class="bg-light text-muted">
+    <div class="container-fluid">
+      Copyright &copy; 2022 &nbsp;|&nbsp; Created by Philip Walton &nbsp;|&nbsp; Source code available under Apache 2.0 license
+    </div>
+  </footer>
+
+  <script defer src="/scripts/perf.js"></script>
+
+</body>
+</html>
