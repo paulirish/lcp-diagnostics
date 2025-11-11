@@ -3,8 +3,9 @@
   "type": "module",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
   "scripts": {
+    "start": "node functions/api.js",
+    "build": "netlify-lambda build functions",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,8 +15,13 @@
     "url": "http://philipwalton.com"
   },
   "license": "Apache-2.0",
+  "dependencies": {
+    "compression": "^1.8.1",
+    "express": "^4.21.2",
+    "serverless-http": "^4.0.0"
+  },
   "devDependencies": {
-    "express": "^4.17.3",
-    "compression": "^1.7.4"
+    "netlify-cli": "^23.10.0",
+    "netlify-lambda": "^2.0.16"
   }
 }

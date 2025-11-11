@@ -1,5 +1,6 @@
 import express from 'express';
 import compression from 'compression';
+import serverless from 'serverless-http';
 
 const app = express();
 app.use(compression());
@@ -29,8 +30,6 @@ app.use((req, res, next) => {
   }
 });
 
-app.use(express.static('./public/'));
+app.use(express.static('../../public/'));
 
-const listener = app.listen(process.env.PORT || 3000, () => {
-  console.log(`Server running:\nhttp://localhost:${listener.address().port}`);
-});
+export const handler = serverless(app);
