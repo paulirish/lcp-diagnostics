@@ -62,7 +62,7 @@ new PerformanceObserver((list) => {
 
   // Log helpful debug information to the console.
   console.log('LCP value: ', lcpRenderTime);
-  console.log('LCP element: ', lcpEntry.element);
+  console.log('LCP element: ', lcpEntry.element, lcpEntry.url);
   console.table(
     lcpSubPartMeasures.map((measure) => ({
       'LCP sub-part': measure.name,

@@ -32,5 +32,5 @@ app.use((req, res, next) => {
 app.use(express.static('./public/'));
 
 const listener = app.listen(process.env.PORT || 3000, () => {
-console.log(`Server running:\nhttp://localhost:${listener.address().port}`);
+  console.log(`Server running:\nhttp://localhost:${listener.address().port}`);
 });
